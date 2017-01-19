@@ -109,7 +109,7 @@ public class PlayActivity extends AppCompatActivity {
 
         try {
 
-            if (index < 4) {
+            if (index <= 4) {
                 imageView.setImageResource(intHang[index]);
             } else {
                 myAlert();
