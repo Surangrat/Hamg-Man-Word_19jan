@@ -111,8 +111,15 @@ public class PlayActivity extends AppCompatActivity {
 
             if (index < 4) {
                 imageView.setImageResource(intHang[index]);
-            } else {
-                myAlert();
+            } else if (index == 4) {
+                imageView.setImageResource(intHang[index]);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        myAlert();
+                    }
+                }, 1000);
             }
 
         } catch (Exception e) {
